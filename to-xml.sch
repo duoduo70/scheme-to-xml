@@ -27,7 +27,6 @@
                                                 ,(let ([attr (car (cdr lst))])
                                                    (cond [(string? attr)
                                                           attr]
-                                                       [(list? attr) (to-xml attr)]
                                                        [else (err-break 'err)]))
                                                 "=\""
                                                 ,(substring
